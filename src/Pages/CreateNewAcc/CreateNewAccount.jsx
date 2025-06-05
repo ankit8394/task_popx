@@ -6,6 +6,12 @@ const CreateNewAccount = () => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
+  const handleAlreadyLogin = () => {
+    navigate("/LoginPage");
+  };
+
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("userData", JSON.stringify({ name, email }));
@@ -74,6 +80,11 @@ const CreateNewAccount = () => {
           <button type="submit" className="Create_btn">
             Create Account
           </button>
+          <div style={{paddingTop: "2px"}}>
+            <button onClick={handleAlreadyLogin} className="Registration_btn">
+            Already Registered? Login
+          </button>
+          </div>
         </form>
       </div>
     </div>

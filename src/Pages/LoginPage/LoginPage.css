@@ -20,7 +20,7 @@
 .para {
   color: #74777b;
 }
-.Login_btn {
+.Login_btn,.Create_btn2 {
   background-color: #6c25ff;
   color: white;
   width: 300px;

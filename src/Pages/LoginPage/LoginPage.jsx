@@ -55,6 +55,14 @@ const LoginPage = () => {
             <button type="submit" className="Login_btn">
               Login
             </button>
+            <div style={{paddingTop: "4px"}}>
+              Dont't have an account?{" "}
+              <span style={{ color: "blue", cursor: "pointer" }}
+                className="createAccount"
+                onClick={() => navigate("/CreateNewAccount")}>
+                Create New Account
+                </span>
+            </div>
           </form>
         </div>
       </div>
